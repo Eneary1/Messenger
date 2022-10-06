@@ -9,7 +9,7 @@
     "tsc": "tsc type-script/index.ts",
     "cssc": "node-sass styles/scss/styles.scss styles/css/styles.css",
     "parcel": "parcel index.hbs",
-    "build": ""
+    "build": "parcel src/index.hbs"
   },
   "author": "Vitaliy Atlasov",
   "license": "ISC",
