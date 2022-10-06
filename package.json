@@ -1,0 +1,30 @@
+{
+  "name": "practicum",
+  "version": "~1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "dev": "node-sass styles/scss/styles.scss styles/css/styles.css && tsc index.ts && node .",
+    "tsc": "tsc type-script/index.ts",
+    "cssc": "node-sass styles/scss/styles.scss styles/css/styles.css",
+    "parcel": "parcel index.hbs",
+    "build": ""
+  },
+  "author": "Vitaliy Atlasov",
+  "license": "ISC",
+  "engines": {
+    "node": "^16.15.0",
+    "npm": "~8.5.5"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "handlebars": "^4.7.7"
+  },
+  "devDependencies": {
+    "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "node-sass": "^7.0.3",
+    "parcel": "^2.7.0",
+    "typescript": "^4.8.4"
+  }
+}
