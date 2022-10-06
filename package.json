@@ -3,11 +3,15 @@
   "version": "~1.0.0",
   "description": "",
   "main": "./src/index.js",
+  "targets": {
+    "web": {
+      "context": "browser",
+      "publicUrl": "./"
+    }
+  },
   "scripts": {
-    "dev": "node-sass styles/scss/styles.scss styles/css/styles.css && tsc index.ts && node .",
-    "tsc": "tsc type-script/index.ts",
-    "cssc": "node-sass styles/scss/styles.scss styles/css/styles.css",
-    "build": "parcel src/index.hbs"
+    "parcel": "parcel src/index.hbs",
+    "build": "parcel build src/index.hbs --target web"
   },
   "author": "Vitaliy Atlasov",
   "license": "ISC",
