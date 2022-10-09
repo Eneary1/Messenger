@@ -20,10 +20,10 @@
 	flex-basis: 25%;
 	border-right: 1px solid $border;
 	&__search-bar{
-		height: 20%;
+		height: 20vh;
 	}
 	&__list-container{
-		height: 80%;
+		height: 80vh;
 		overflow-y: visible;
 	}
 	&__list-element{
