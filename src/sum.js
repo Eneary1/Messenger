@@ -4,4 +4,6 @@ export function sum(...args) {
 	}
   
 	return args.reduce((result, current) => result + current, 0);
-  } 
+  }
+  let le = "ASD";
+export {le};

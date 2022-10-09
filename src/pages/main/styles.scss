@@ -1,0 +1,88 @@
+@import "../../utils/globals.scss";
+
+%flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#content{
+	display: flex;
+	min-height: 100vh;
+}
+
+.checked{
+	background-color: $picked-chat;
+}
+
+.chat-list{
+	background-color: $content-block;
+	flex-basis: 25%;
+	border-right: 1px solid $border;
+	&__search-bar{
+		height: 20%;
+	}
+	&__list-container{
+		height: 80%;
+		overflow-y: visible;
+	}
+	&__list-element{
+		position: relative;
+		cursor: pointer;
+		& > *{
+			align-self: center;
+			justify-self: left;
+		}
+		height: 5rem;
+		display: grid;
+		grid-template-columns: 5rem auto 2.5rem;
+		grid-template-areas: 
+		"icon name date"
+		"icon text-preview circle";
+		margin: 2% 5%;
+	}
+	&__list-element:hover{
+		background-color: $picked-chat;
+	}
+}
+
+.element{
+	&__icon{
+		margin: 2%;
+		grid-area: icon;
+		justify-self: stretch;
+		align-self: stretch;
+		border-radius: 30%;
+		background-color: $messages;
+	}
+	&__name{
+		grid-area: name;
+		font-weight: bold;
+		margin-left: 10px;
+	}
+	&__date{
+		grid-area: date;
+	}
+	&__text-preview{
+		grid-area: text-preview;
+		margin-left: 10px;
+	}
+	&__circle{
+		margin: 2%;
+		grid-area: circle;
+		justify-self: stretch;
+		align-self: stretch;
+		color: white;
+		@extend %flex;
+	}
+}
+
+.message-tape{
+	flex-basis: 75%;
+	&_unpicked{
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
